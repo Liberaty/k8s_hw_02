@@ -31,10 +31,10 @@
 
 Создали манифест pod-hello-world.yaml с указанием image gcr.io/kubernetes-e2e-test-images/echoserver:2.2
 Создали pod и пробросили порт 8080:
-![1.1.png]{https://github.com/Liberaty/k8s_hw_02/blob/main/img/1.1.png?raw=true}
+![1.1.png](https://github.com/Liberaty/k8s_hw_02/blob/main/img/1.1.png?raw=true)
 
 Теперь выполняем curl из другого окна консоли:
-![1.2.png]{https://github.com/Liberaty/k8s_hw_02/blob/main/img/1.2.png?raw=true}
+![1.2.png](https://github.com/Liberaty/k8s_hw_02/blob/main/img/1.2.png?raw=true)
 
 ------
 
@@ -49,10 +49,10 @@
 
 Создали манифесты pod-netology-web.yaml c label app: netology-web и netology-svc.yaml с селектором по данному label.
 Создали pod и service, убедились, что сервис работает корректно и пробросили порт сервиса 8080 на 80 порт:
-![2.1.png]{https://github.com/Liberaty/k8s_hw_02/blob/main/img/2.1.png?raw=true}
+![2.1.png](https://github.com/Liberaty/k8s_hw_02/blob/main/img/2.1.png?raw=true)
 
 Теперь выполняем curl из другого окна консоли:
-![2.2.png]{https://github.com/Liberaty/k8s_hw_02/blob/main/img/2.2.png?raw=true}
+![2.2.png](https://github.com/Liberaty/k8s_hw_02/blob/main/img/2.2.png?raw=true)
 
 ------
 
