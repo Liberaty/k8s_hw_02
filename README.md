@@ -26,6 +26,15 @@
 1. Создать манифест (yaml-конфигурацию) Pod.
 2. Использовать image - gcr.io/kubernetes-e2e-test-images/echoserver:2.2.
 3. Подключиться локально к Pod с помощью `kubectl port-forward` и вывести значение (curl или в браузере).
+#
+***Ответ***
+
+Создали манифест pod-hello-world.yaml с указанием image gcr.io/kubernetes-e2e-test-images/echoserver:2.2
+Создали pod и пробросили порт 8080:
+![1.1.png]{}
+
+Теперь выполняем curl из другого окна консоли:
+![1.2.png]{}
 
 ------
 
@@ -35,6 +44,15 @@
 2. Использовать image — gcr.io/kubernetes-e2e-test-images/echoserver:2.2.
 3. Создать Service с именем netology-svc и подключить к netology-web.
 4. Подключиться локально к Service с помощью `kubectl port-forward` и вывести значение (curl или в браузере).
+#
+***Ответ***
+
+Создали манифесты pod-netology-web.yaml c label app: netology-web и netology-svc.yaml с селектором по данному label.
+Создали pod и service, убедились, что сервис работает корректно и пробросили порт сервиса 8080 на 80 порт:
+![2.1.png]{}
+
+Теперь выполняем curl из другого окна консоли:
+![2.2.png]{}
 
 ------
 
